@@ -22,6 +22,7 @@ int _printf(const char *format, ...)
 	char * st;
 
 	va_start(aug, format);
+
 	while (format && format[n])
 	{
 		if (format[n] == '%')
