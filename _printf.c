@@ -1,4 +1,5 @@
 #include "main.h"
+#include "_itoa.c"
 #include <string.h>
 #include <stdio.h>
 #include <stdlib.h>
@@ -20,6 +21,7 @@ int _printf(const char *format, ...)
 	int l = 0;
 	char buff[100] = {0};
 	char * st;
+	char tmp[100];
 
 	va_start(aug, format);
 	while (format && format[n])
@@ -36,7 +38,7 @@ int _printf(const char *format, ...)
 					 strcpy(&buff[l], st);
 					 l += strlen(st);
 					 break;
-				case 'd': _itoa(va_arg(aug, int), tmp,
+				case 'd':_itoa(va_arg(aug, int), tmp, 10);
 					 strcpy(&buff[l], tmp);
 					 l += strlen(tmp);
 					 break;
