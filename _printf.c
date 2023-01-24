@@ -36,6 +36,10 @@ int _printf(const char *format, ...)
 					 strcpy(&buff[l], st);
 					 l += strlen(st);
 					 break;
+				case 'd': _itoa(va_arg(aug, int), tmp,
+					 strcpy(&buff[l], tmp);
+					 l += strlen(tmp);
+					 break;
 			}
 		}
 		else
