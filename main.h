@@ -74,6 +74,7 @@ typedef struct fmt fmt_t;
 
 
 int _printf(const char *format, ...);
+<<<<<<< HEAD
 
 int handle_print(const char *fmt, int *i,
 
@@ -210,3 +211,8 @@ long int convert_size_unsgnd(unsigned long int num, int size);
 
 
 #endif /* MAIN_H */
+=======
+char *_itoa(int i, char *strout, int base);
+char *_strrev (char *str);
+#endif
+>>>>>>> 32ba1fb4ee0d706359978bdf1506fb33a06c9a8a
