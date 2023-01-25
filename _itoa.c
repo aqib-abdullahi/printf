@@ -1,3 +1,6 @@
+#include "_strrev.c"
+#include "main.h"
+
 char * _itoa(int i, char *strout, int base)
 {
 	char *str = strout;
